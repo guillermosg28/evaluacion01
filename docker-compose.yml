@@ -1,0 +1,22 @@
+version: '3'
+services:
+  evaluacion-app:
+    container_name: evaluacion-app
+    build: .
+    depends_on: 
+      - mongodb
+    ports:
+      - 9595:9595
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+
+  mongodb:
+    image: mongo:5.0
+    ports:
+      - 27017:27017
+    volumes:
+      - ~/apps/mongo:/data/db
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=
+      - MONGO_INITDB_ROOT_PASSWORD=
