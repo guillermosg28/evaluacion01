@@ -7,7 +7,7 @@
 
 ## Apis
 
-`GET: /upload_documents`
+`GET: /upload_documents`<br/>
 Crea y carga los datos a la BD de mongo
 
 `GET: /alls`
