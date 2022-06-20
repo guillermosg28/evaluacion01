@@ -1,5 +1,5 @@
 const express = require('express');
-// Constants
+// Constants locales
 const hostname = '0.0.0.0';
 const port = 9595;
 
