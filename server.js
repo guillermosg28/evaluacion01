@@ -1,6 +1,6 @@
 const express = require('express');
 // Constants
-const hostname = '0.0.0.0';
+const hostname = `${process.env.HOSTNAME}`;
 const port = 9595;
 
 // App
