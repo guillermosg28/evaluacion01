@@ -5,9 +5,10 @@
 -ejecutar la aplicación:  `docker-compose build`<br/>
 -luego lenvatamos el contenedor `docker-compose up`
 
-## APIS
+## Apis
 
 `GET: /upload_documents`
+Crea y carga los datos a la BD de mongo
 
 `GET: /alls`
 
