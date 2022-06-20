@@ -10,14 +10,14 @@
 `GET: http://localhost:9595/upload_documents`<br/>
 Crea y carga los datos a la BD de mongo
 
-`GET: http://localhost:9595/alls`
+`GET: http://localhost:9595/alls`<br/>
 Retorna todos los documentos
 
-`GET: http://localhost:9595/search?category=ABARROTES`
+`GET: http://localhost:9595/search?category=ABARROTES`<br/>
 Filtra los documentos por categoría
 
-`UPDATE: http://localhost:9595/update?name=MALTIN&category=GASEOSAS&price=93`
+`UPDATE: http://localhost:9595/update?name=MALTIN&category=GASEOSAS&price=93`<br/>
 Actualiza un documento, si existe actualiza los datos, si no existe se ingresa un nuevo documento
 
-`DELETE: http://localhost:9595/delete?name=MALTIN`
+`DELETE: http://localhost:9595/delete?name=MALTIN`<br/>
 Elimina un documento, si existe en la BD
