@@ -7,13 +7,13 @@
 
 ## Apis
 
-`GET: /upload_documents`<br/>
+`GET: http://localhost:9595/upload_documents`<br/>
 Crea y carga los datos a la BD de mongo
 
-`GET: /alls`
+`GET: http://localhost:9595/alls`
 
-`GET: /search?category=ABARROTES`
+`GET: http://localhost:9595/search?category=ABARROTES`
 
-`UPDATE: /update?name=MALTIN&category=GASEOSAS&price=93`
+`UPDATE: http://localhost:9595/update?name=MALTIN&category=GASEOSAS&price=93`
 
-`DELETE: /delete?name=MALTIN`
+`DELETE: http://localhost:9595/delete?name=MALTIN`
