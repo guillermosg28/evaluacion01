@@ -11,9 +11,13 @@
 Crea y carga los datos a la BD de mongo
 
 `GET: http://localhost:9595/alls`
+Retorna todos los documentos
 
 `GET: http://localhost:9595/search?category=ABARROTES`
+Filtra los documentos por categoría
 
 `UPDATE: http://localhost:9595/update?name=MALTIN&category=GASEOSAS&price=93`
+Actualiza un documento, si existe actualiza los datos, si no existe se ingresa un nuevo documento
 
 `DELETE: http://localhost:9595/delete?name=MALTIN`
+Elimina un documento, si existe en la BD
