@@ -16,7 +16,7 @@ Retorna todos los documentos
 `GET: http://localhost:9595/search?category=ABARROTES`<br/>
 Filtra los documentos por categoría
 
-`UPDATE: http://localhost:9595/update?name=MALTIN&category=GASEOSAS&price=93`<br/>
+`PUT: http://localhost:9595/update?name=MALTIN&category=GASEOSAS&price=93`<br/>
 Actualiza un documento, si existe actualiza los datos, si no existe se ingresa un nuevo documento
 
 `DELETE: http://localhost:9595/delete?name=MALTIN`<br/>
