@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 // // Connect to mongodb server
 var MongoClient = require('mongodb').MongoClient;
 // /* Your url connection to mongodb container */
-var url = `mongodb://localhost:27017/`;
+var url = `mongodb://mongo:27017/`;
 
 // GET method route
 // Upload documents to database
@@ -25,7 +25,8 @@ app.get('/upload_documents', function (request, response) {
             response.status(503);
             response.send({
                 success: false,
-                status_code: 503
+                status_code: 503,
+                errs: err
             })
         } else {
             var dbo = db.db("market");

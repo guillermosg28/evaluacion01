@@ -1,18 +1,20 @@
 version: '3'
 services:
-  evaluacion-app:
-    container_name: evaluacion-app
+  app:
+    container_name: app
+    restart: always
     build: .
-    depends_on: 
-      - mongodb
     ports:
       - 9595:9595
     volumes:
       - .:/usr/src/app
       - /usr/src/app/node_modules
+    links:
+      - mongo
 
-  mongodb:
+  mongo:
     image: mongo:5.0
+    container_name: mongo
     ports:
       - 27017:27017
     volumes:

@@ -15,7 +15,6 @@ RUN npm install
 # Bundle app source
 COPY . .
 
-# Bind your app to port 8080
-EXPOSE 9595
-
- CMD [ "node", "server.js" ]
+# Bind your app to port 9595
+CMD node server.js
+EXPOSE 4000
